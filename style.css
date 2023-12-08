@@ -366,7 +366,12 @@ body {
 .boxTen {
     display: grid;
     gap: 10px;
-    grid-template-columns: 320px 320px 320px;
+    /* Vi sätter absoluta värden på colomnerna i pixelformat */
+   /* grid-template-columns: 320px 320px 320px;*/
+   /* Vi använder flexibla columner med hjälp av enheten fr = fraction*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /* Samma som förra fast med hjälp av repeat()-funktioner*/
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "...... header2 header2"
                          "sidebar2 content2 content2"
                          "footer2 footer2 footer2";
