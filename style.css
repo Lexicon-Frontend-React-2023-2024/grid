@@ -330,3 +330,34 @@ body {
 }
 
 /* End */
+
+/*Defining grid areas by naming*/
+
+.boxNine {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas: "...... header header" 
+                         "sidebar content content" ;
+}
+
+.box9 {
+    background-color: goldenrod;
+    color: whitesmoke;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.header {
+    grid-area: header;
+}
+ .sidebar {
+    grid-area: sidebar;
+ }
+ .content {
+    grid-area: content;
+ }
+
+ /* End */
+
