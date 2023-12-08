@@ -361,3 +361,37 @@ body {
 
  /* End */
 
+/* Another grid areas by naming */
+
+.boxTen {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-areas: "...... header2 header2"
+                         "sidebar2 content2 content2"
+                         "footer2 footer2 footer2";
+}
+
+.box10 {
+    background-color: bisque;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+.header2 {
+    grid-area: header2;
+    background-color:aquamarine;
+}
+.sidebar2 {
+    grid-area: sidebar2;
+}
+.content2 {
+    grid-area: content2;
+}
+.footer2 {
+    grid-area: footer2;
+    background-color:aquamarine;
+}
+
+/* End */
+
